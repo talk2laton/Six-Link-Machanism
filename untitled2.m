@@ -3,7 +3,7 @@ L1 = 5; L2 = 2; L3 = 6; L4 = 4; L5 = 6; L6 = 4; L7 = 5; L8 = 1;
 clrs = [0,0,0;51,200,255;0,0,255;0,204,204;255,183,234;204,102,0]/255;
 t = linspace(0,2*pi,7); brown = [206,179,140]/255;
 figure(Color='w',Position =  [20 70 1220 500]);
-subplot(3,2,[1,3,5]);
+%subplot(3,2,[1,3,5]);
 fill(1.15*cos(t), 1.15*sin(t), 0.7*[1,1,1]); hold on;
 fill(L1+1.15*cos(t), 1.15*sin(t), 0.7*[1,1,1]); 
 fill((L1 + L7)+1.15*cos(t), L8+1.15*sin(t), 0.7*[1,1,1]);
@@ -57,45 +57,45 @@ text(0.2, 4.5, '$y$', 'Interpreter', 'Latex', 'FontSize', 15);
 text(12.5, -0.2, '$x$', 'Interpreter', 'Latex', 'FontSize', 15);
 axis([-2.6,13,-5,5]); axis off; box off;
 w2 = 30*2*pi/60; dt = 2*pi/100/w2;
-subplot(3,2,2)
-Bar2Ang = plot(0, nan, Color = clrs(2,:), LineWidth = 2); hold on;
-Bar3Ang = plot(0, nan, Color = clrs(3,:), LineWidth = 2); 
-Bar4Ang = plot(0, nan, Color = clrs(4,:), LineWidth = 2);
-Bar5Ang = plot(0, nan, Color = clrs(5,:), LineWidth = 2); 
-Bar6Ang = plot(0, nan, Color = clrs(6,:), LineWidth = 2);hold off;
-ax = gca; ax.TickLabelInterpreter = 'latex'; ax.FontSize = 15;
-xlabel('$time (sec)$', 'Interpreter', 'Latex', 'FontSize', 15);
-ylabel('$\theta (rad)$', 'Interpreter', 'Latex', 'FontSize', 15);
-legend('$\theta_2$', '$\theta_3$', '$\theta_4$', '$\theta_5$', ....
- '$\theta_6$', 'Interpreter', 'Latex', 'FontSize', 15, ...
- 'Location','northeastoutside');
-axis([0,10,0,7]); grid on
-subplot(3,2,4)
-Bar2Vel = plot(0, nan, Color = clrs(2,:), LineWidth = 2); hold on;
-Bar3Vel = plot(0, nan, Color = clrs(3,:), LineWidth = 2); 
-Bar4Vel = plot(0, nan, Color = clrs(4,:), LineWidth = 2);
-Bar5Vel = plot(0, nan, Color = clrs(5,:), LineWidth = 2); 
-Bar6Vel = plot(0, nan, Color = clrs(6,:), LineWidth = 2);hold off;
-ax = gca; ax.TickLabelInterpreter = 'latex'; ax.FontSize = 15;
-xlabel('$time (sec)$', 'Interpreter', 'Latex', 'FontSize', 15);
-ylabel('$\omega (rad/s)$', 'Interpreter', 'Latex', 'FontSize', 15);
-legend('$\omega_2$', '$\omega_3$', '$\omega_4$', '$\omega_5$', ....
- '$\omega_6$', 'Interpreter', 'Latex', 'FontSize', 15, ...
-  'Location','northeastoutside');
-axis([0,10,-4,4]); grid on
-subplot(3,2,6)
-Bar2Acc = plot(0, nan, Color = clrs(2,:), LineWidth = 2); hold on;
-Bar3Acc = plot(0, nan, Color = clrs(3,:), LineWidth = 2); 
-Bar4Acc = plot(0, nan, Color = clrs(4,:), LineWidth = 2);
-Bar5Acc = plot(0, nan, Color = clrs(5,:), LineWidth = 2); 
-Bar6Acc = plot(0, nan, Color = clrs(6,:), LineWidth = 2); hold off;
-ax = gca; ax.TickLabelInterpreter = 'latex'; ax.FontSize = 15;
-xlabel('$time (sec)$', 'Interpreter', 'Latex', 'FontSize', 15);
-ylabel('$\alpha (rad/s^2)$', 'Interpreter', 'Latex', 'FontSize', 15);
-legend('$\alpha_2$', '$\alpha_3$', '$\alpha_4$', '$\alpha_5$', ....
- '$\alpha_6$', 'Interpreter', 'Latex', 'FontSize', 15, ...
- 'Location','northeastoutside');
-axis([0,10,-30,30]); grid on
+%subplot(3,2,2)
+% Bar2Ang = plot(0, nan, Color = clrs(2,:), LineWidth = 2); hold on;
+% Bar3Ang = plot(0, nan, Color = clrs(3,:), LineWidth = 2); 
+% Bar4Ang = plot(0, nan, Color = clrs(4,:), LineWidth = 2);
+% Bar5Ang = plot(0, nan, Color = clrs(5,:), LineWidth = 2); 
+% Bar6Ang = plot(0, nan, Color = clrs(6,:), LineWidth = 2);hold off;
+% ax = gca; ax.TickLabelInterpreter = 'latex'; ax.FontSize = 15;
+% xlabel('$time (sec)$', 'Interpreter', 'Latex', 'FontSize', 15);
+% ylabel('$\theta (rad)$', 'Interpreter', 'Latex', 'FontSize', 15);
+% legend('$\theta_2$', '$\theta_3$', '$\theta_4$', '$\theta_5$', ....
+%  '$\theta_6$', 'Interpreter', 'Latex', 'FontSize', 15, ...
+%  'Location','northeastoutside');
+% axis([0,10,0,7]); grid on
+% subplot(3,2,4)
+% Bar2Vel = plot(0, nan, Color = clrs(2,:), LineWidth = 2); hold on;
+% Bar3Vel = plot(0, nan, Color = clrs(3,:), LineWidth = 2); 
+% Bar4Vel = plot(0, nan, Color = clrs(4,:), LineWidth = 2);
+% Bar5Vel = plot(0, nan, Color = clrs(5,:), LineWidth = 2); 
+% Bar6Vel = plot(0, nan, Color = clrs(6,:), LineWidth = 2);hold off;
+% ax = gca; ax.TickLabelInterpreter = 'latex'; ax.FontSize = 15;
+% xlabel('$time (sec)$', 'Interpreter', 'Latex', 'FontSize', 15);
+% ylabel('$\omega (rad/s)$', 'Interpreter', 'Latex', 'FontSize', 15);
+% legend('$\omega_2$', '$\omega_3$', '$\omega_4$', '$\omega_5$', ....
+%  '$\omega_6$', 'Interpreter', 'Latex', 'FontSize', 15, ...
+%   'Location','northeastoutside');
+% axis([0,10,-4,4]); grid on
+% subplot(3,2,6)
+% Bar2Acc = plot(0, nan, Color = clrs(2,:), LineWidth = 2); hold on;
+% Bar3Acc = plot(0, nan, Color = clrs(3,:), LineWidth = 2); 
+% Bar4Acc = plot(0, nan, Color = clrs(4,:), LineWidth = 2);
+% Bar5Acc = plot(0, nan, Color = clrs(5,:), LineWidth = 2); 
+% Bar6Acc = plot(0, nan, Color = clrs(6,:), LineWidth = 2); hold off;
+% ax = gca; ax.TickLabelInterpreter = 'latex'; ax.FontSize = 15;
+% xlabel('$time (sec)$', 'Interpreter', 'Latex', 'FontSize', 15);
+% ylabel('$\alpha (rad/s^2)$', 'Interpreter', 'Latex', 'FontSize', 15);
+% legend('$\alpha_2$', '$\alpha_3$', '$\alpha_4$', '$\alpha_5$', ....
+%  '$\alpha_6$', 'Interpreter', 'Latex', 'FontSize', 15, ...
+%  'Location','northeastoutside');
+% axis([0,10,-30,30]); grid on
 t = 0;
 vid = VideoWriter('six2 link.avi');
 open(vid); frame = getframe(gcf);  writeVideo(vid,frame);

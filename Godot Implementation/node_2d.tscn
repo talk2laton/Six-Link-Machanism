@@ -1,0 +1,101 @@
+[gd_scene load_steps=8 format=3 uid="uid://bqpp3n5rnfmgn"]
+
+[ext_resource type="Texture2D" uid="uid://bvx4dkdcxf2wy" path="res://B_5.png" id="1_bvtsr"]
+[ext_resource type="Script" path="res://Origin.gd" id="2_2e751"]
+[ext_resource type="Texture2D" uid="uid://dsi8kxqn4oram" path="res://L_1.png" id="3_8axvn"]
+[ext_resource type="Texture2D" uid="uid://3cmqdqnbwhpd" path="res://L_2.png" id="4_1jcx8"]
+[ext_resource type="Texture2D" uid="uid://cdrsqf8rk4orh" path="res://B_6.png" id="4_3s2ki"]
+[ext_resource type="Texture2D" uid="uid://bgi7cik1dr0kd" path="res://L_3.png" id="5_jjpba"]
+[ext_resource type="Texture2D" uid="uid://b4hy4jy2qoerj" path="res://H_1.png" id="6_2uova"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -4.0
+offset_top = -15.0
+offset_right = 1153.0
+offset_bottom = 638.0
+
+[node name="Origin" type="Sprite2D" parent="ColorRect"]
+position = Vector2(300, 400)
+texture = ExtResource("1_bvtsr")
+script = ExtResource("2_2e751")
+
+[node name="Base1" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(300, 0)
+texture = ExtResource("1_bvtsr")
+
+[node name="Base2" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(600, -70)
+texture = ExtResource("1_bvtsr")
+
+[node name="Bar1" type="Sprite2D" parent="ColorRect/Origin"]
+rotation = 4.78744
+texture = ExtResource("3_8axvn")
+offset = Vector2(91, 0)
+
+[node name="Pin1" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(-3.05176e-05, 0)
+rotation = 1.5708
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_3s2ki")
+
+[node name="Bar2" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(300, 0)
+rotation = 4.76475
+texture = ExtResource("3_8axvn")
+offset = Vector2(91, 0)
+
+[node name="Bar3" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(10, -129)
+rotation = -0.18326
+texture = ExtResource("4_1jcx8")
+offset = Vector2(151.281, 1.48438)
+
+[node name="Pin3" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(309, -184)
+rotation = 1.5708
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_3s2ki")
+
+[node name="Pin2" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(300, 0)
+rotation = 1.5708
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_3s2ki")
+
+[node name="Bar4" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(229, -182)
+rotation = 0.733038
+texture = ExtResource("5_jjpba")
+offset = Vector2(214.281, 1.48438)
+
+[node name="Pin5" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(228, -180)
+rotation = 1.5708
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_3s2ki")
+
+[node name="Head5" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(600, -70)
+rotation = 1.85878
+texture = ExtResource("6_2uova")
+offset = Vector2(107.281, 1.48438)
+
+[node name="Pin4" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(10, -129)
+rotation = 1.5708
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_3s2ki")
+
+[node name="Pin6" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(547, 106)
+rotation = 1.5708
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_3s2ki")
+
+[node name="Pin7" type="Sprite2D" parent="ColorRect/Origin"]
+position = Vector2(599, -70)
+rotation = 1.5708
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_3s2ki")
